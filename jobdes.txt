@@ -1,0 +1,33 @@
+DevOps Engineer
+
+About the Role:
+We are looking for a DevOps Engineer to join our infrastructure team. The ideal candidate will be responsible for implementing and maintaining our CI/CD pipelines, managing cloud infrastructure, and ensuring system reliability. 
+
+Key Responsibilities:
+• Design and implement CI/CD pipelines
+• Manage cloud infrastructure (AWS/Azure)
+• Implement infrastructure as code
+• Monitor system performance
+• Automate deployment processes
+• Ensure system security
+• Collaborate with development teams
+
+Requirements:
+• 3+ years of DevOps experience
+• Strong experience with cloud platforms
+• Knowledge of containerization (Docker)
+• Experience with CI/CD tools
+• Understanding of infrastructure as code
+• Knowledge of Linux systems
+• Strong scripting skills
+
+Preferred Qualifications:
+• Experience with Kubernetes
+• Knowledge of monitoring tools
+• Experience with security tools
+• Cloud certifications
+• Experience with microservices
+• Understanding of networking
+
+Location: Remote
+Salary Range: $110,000 - $150,000

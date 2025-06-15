@@ -1,0 +1,42 @@
+JOHN DOE
+Software Engineer
+john.doe@email.com | (555) 123-4567 | linkedin.com/in/johndoe
+
+PROFESSIONAL SUMMARY
+Innovative and detail-oriented Software Engineer with 3+ years of experience in full-stack development. Proficient in Python, JavaScript, and cloud technologies. Strong problem-solving skills and experience in agile development environments.
+
+TECHNICAL SKILLS
+• Programming Languages: Python, JavaScript, Java, SQL
+• Web Technologies: React, Node.js, HTML5, CSS3
+• Cloud Platforms: AWS, Azure
+• Databases: PostgreSQL, MongoDB
+• Tools & Frameworks: Git, Docker, Django, Flask
+• Agile Methodologies: Scrum, Kanban
+
+PROFESSIONAL EXPERIENCE
+Senior Software Engineer
+Tech Solutions Inc. | January 2022 - Present
+• Developed and maintained microservices architecture using Python and Docker
+• Implemented CI/CD pipelines reducing deployment time by 40%
+• Led a team of 3 developers in delivering a cloud migration project        
+• Optimized database queries resulting in 30% performance improvement       
+• Mentored junior developers and conducted code reviews
+
+Software Developer
+Innovate Tech | June 2020 - December 2021
+• Built RESTful APIs using Python and Flask
+• Developed front-end applications using React and Redux
+• Collaborated with UX designers to implement responsive web interfaces     
+• Reduced application load time by 25% through code optimization
+• Participated in daily stand-ups and sprint planning meetings
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of Technology | 2016 - 2020
+• GPA: 3.8/4.0
+• Relevant Coursework: Data Structures, Algorithms, Software Engineering    
+• Senior Project: Developed a real-time collaboration platform
+
+CERTIFICATIONS
+• AWS Certified Developer Associate
+• Python Professional Certification

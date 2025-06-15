@@ -1,0 +1,50 @@
+AI Resume Tailoring Assistant - Project Overview
+================================================
+
+Project Description
+-------------------
+This project is an AI-powered Resume Tailoring Assistant built using LangChain, Streamlit, and OpenAI. It helps users optimize their resumes for specific job descriptions by analyzing both documents, generating tailored resume bullet points, and creating a personalized cover letter. The assistant demonstrates advanced AI agent capabilities, including multi-step reasoning, prompt chaining, memory, and iterative refinement.
+
+Key Features
+------------
+- **Resume & Job Description Input:** Users can paste their resume and a job description into a user-friendly Streamlit web interface.
+- **Resume Analysis:** The AI agent analyzes the resume, extracting technical skills, soft skills, tools/technologies, and work experience.
+- **Job Analysis:** The agent extracts required and preferred skills, responsibilities, and qualifications from the job description.
+- **Tailored Bullet Points:** The agent generates resume bullet points specifically tailored to the job description.
+- **Fit Evaluation:** The system calculates a fit score, strengths, and areas for improvement based on the match between the resume and job description.
+- **Personalized Cover Letter:** The assistant generates a professional, job-specific cover letter using the provided resume and job description.
+- **Downloadable Results:** Users can download the generated cover letter as a Word document.
+
+AI/Agent Architecture
+---------------------
+- **LangChain Agents:** The core logic is implemented using custom LangChain agents (`ResumeAgent` and `CoverLetterAgent`), each composed of multiple LLM chains and tools.
+- **Multi-Step Reasoning:** Each agent breaks down its task into multiple steps (e.g., extract skills, generate bullets, calculate fit, refine analysis).
+- **Prompt Chaining:** Outputs from one step are used as inputs for subsequent steps, enabling complex, context-aware reasoning.
+- **Memory:** The architecture supports conversational memory (via `ConversationBufferMemory`), allowing for multi-turn interactions and future extensibility.
+- **Refinement:** Both resume and cover letter generation include refinement steps, where initial outputs are improved through additional LLM prompts.
+
+Technologies Used
+-----------------
+- **LangChain** (for agent orchestration, prompt chaining, and memory)
+- **OpenAI GPT** (for natural language understanding and generation)
+- **Streamlit** (for the interactive web UI)
+- **python-docx** (for Word document generation)
+- **Python** (core programming language)
+
+How Requirements Are Met
+------------------------
+- **Multi-step reasoning:** Agents perform analysis, tailoring, scoring, and refinement in sequence.
+- **Prompt chaining:** Each step's output feeds into the next, enabling complex workflows.
+- **Memory:** ConversationBufferMemory is integrated for session memory and extensibility.
+- **Refinement:** Both resume and cover letter outputs are iteratively improved.
+- **Tailored content:** Bullet points and cover letters are customized for each job description.
+
+Usage
+-----
+1. Launch the Streamlit app.
+2. Paste your resume and a job description into the provided fields.
+3. Click "Generate Tailored Content".
+4. View the analysis, tailored bullets, fit evaluation, and generated cover letter in separate tabs.
+5. Download the cover letter as a Word document if desired.
+
+This project demonstrates a practical application of modern AI agent design for career development and job search optimization. 

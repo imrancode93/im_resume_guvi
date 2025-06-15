@@ -1,0 +1,90 @@
+Let me explain why we created `setup.py` and `run.py` and how to use them:
+
+**Why we created these files:**
+
+1. `setup.py`:
+- Makes it easier to set up the project
+- Automatically creates virtual environment
+- Installs all required packages
+- Creates the `.env` file template
+- Prevents common setup mistakes
+
+2. `run.py`:
+- Makes it easier to run the application
+- Checks if everything is set up correctly
+- Verifies the API key is set
+- Starts the Streamlit app
+
+**How to run the project (Step by Step):**
+
+1. **First Time Setup**:
+```bash
+# Run setup script
+python setup.py
+```
+This will:
+- Create a virtual environment
+- Install all required packages
+- Create `.env` file
+
+2. **Update API Key**:
+- Open the `.env` file
+- Replace `your_api_key_here` with your actual OpenAI API key:
+```
+OPENAI_API_KEY=sk-your-actual-api-key-here
+MODEL_NAME=gpt-4-turbo-preview
+TEMPERATURE=0.7
+```
+
+3. **Activate Virtual Environment**:
+```bash
+# On Windows:
+venv\Scripts\activate
+
+# On macOS/Linux:
+source venv/bin/activate
+```
+
+4. **Run the Application**:
+```bash
+python run.py
+```
+
+**What happens when you run the application:**
+
+1. The app will open in your web browser
+2. You'll see two text areas:
+   - One for your resume
+   - One for the job description
+
+3. **To use the app**:
+   - Paste your resume in the first text area
+   - Paste the job description in the second text area
+   - Click "Generate Tailored Content"
+   - Wait for the analysis
+   - View the results in the tabs:
+     - Resume Analysis
+     - Job Analysis
+     - Cover Letter
+     - Fit Evaluation
+   - Download the results if needed
+
+**Example Usage**:
+1. Start the app:
+```bash
+python run.py
+```
+
+2. In the web interface:
+   - Paste your resume
+   - Paste a job description
+   - Click "Generate Tailored Content"
+
+3. The app will:
+   - Analyze your resume
+   - Analyze the job description
+   - Generate tailored bullet points
+   - Create a personalized cover letter
+   - Show the fit analysis
+
+Would you like me to show you an example of how to use the app with sample resume and job description data?

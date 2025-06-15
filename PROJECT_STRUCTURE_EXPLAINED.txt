@@ -1,0 +1,54 @@
+AI Resume Tailoring Assistant - Project Structure Explained
+==========================================================
+
+This document explains the purpose of each folder and script in the project.
+
+Project Root
+------------
+- **app.py**
+  - The main entry point for the Streamlit web application. Handles the user interface, collects user input (resume and job description), calls the AI agents, and displays results in different tabs.
+- **run.py**
+  - (If present) A helper script to launch the Streamlit app, often used for convenience or deployment.
+- **requirements.txt**
+  - Lists all Python dependencies required to run the project. Used for setting up the environment with `pip install -r requirements.txt`.
+- **.env**
+  - Stores environment variables, such as the OpenAI API key. Not included in version control for security.
+- **PROJECT_OVERVIEW.txt**
+  - A high-level summary of the project, its features, and how it meets the requirements.
+- **PROJECT_USAGE_GUIDE.txt**
+  - Step-by-step instructions for setting up, running, and demonstrating the project.
+- **PROJECT_STRUCTURE_EXPLAINED.txt**
+  - (This file) Explains the structure and purpose of each folder and script.
+
+agents/
+-------
+- **agents/__init__.py**
+  - (Optional) Marks the `agents` directory as a Python package.
+- **agents/resume_agent.py**
+  - Contains the `ResumeAgent` class, which performs multi-step analysis of the resume and job description. Handles skills extraction, experience extraction, job analysis, bullet generation, fit scoring, and refinement using LangChain LLM chains and tools.
+- **agents/cover_letter_agent.py**
+  - Contains the `CoverLetterAgent` class, which generates and refines a personalized cover letter using the resume and job description. Includes multi-step optimization and tone/impact refinement.
+
+utils/
+------
+- **utils/__init__.py**
+  - (Optional) Marks the `utils` directory as a Python package.
+- **utils/file_handler.py**
+  - Contains helper functions for file operations, such as creating and saving the cover letter as a Word document using `python-docx`.
+
+Other Files/Folders
+-------------------
+- **venv/**
+  - The Python virtual environment directory (created locally, not included in version control). Contains installed packages and environment-specific files.
+- **__pycache__/**
+  - Python's cache directory for compiled bytecode files. Not included in version control.
+
+How the Pieces Work Together
+----------------------------
+- The user interacts with the app via `app.py` (Streamlit UI).
+- When the user submits their resume and job description, `app.py` calls the agents in `agents/` to perform analysis and generate content.
+- The agents use LangChain LLM chains and tools to break down the task into multiple steps, chaining prompts and refining results.
+- Utility functions in `utils/` handle file creation and downloads.
+- The results are displayed in the UI and can be downloaded as needed.
+
+This modular structure makes the project easy to understand, extend, and maintain. 

@@ -1,0 +1,81 @@
+AI Resume Tailoring Assistant - Usage & Demo Guide
+==================================================
+
+This guide will help you record or demonstrate your project, showing how to start each module, use the features, and run the full workflow from start to finish.
+
+1. **Project Setup**
+-------------------
+- Ensure you have Python 3.8+ installed.
+- (Recommended) Create and activate a virtual environment:
+  ```
+  python -m venv venv
+  source venv/bin/activate  # On Windows: venv\Scripts\activate
+  ```
+- Install dependencies:
+  ```
+  pip install -r requirements.txt
+  ```
+- Set your OpenAI API key in a `.env` file:
+  ```
+  OPENAI_API_KEY=your_openai_api_key_here
+  ```
+
+2. **Starting the Application**
+------------------------------
+- Run the Streamlit app:
+  ```
+  streamlit run app.py
+  ```
+- The app will open in your browser at `http://localhost:8501`.
+
+3. **Using the Streamlit UI**
+----------------------------
+- **Step 1:** Paste your resume into the "Your Resume" text area.
+- **Step 2:** Paste the job description into the "Job Description" text area.
+- **Step 3:** Click the red "Generate Tailored Content" button.
+
+4. **Understanding the Tabs/Modules**
+-------------------------------------
+- **Resume Analysis Tab:**
+  - Shows extracted technical skills, soft skills, tools/technologies, and work experience from your resume.
+- **Job Analysis Tab:**
+  - Shows required and preferred skills, responsibilities, and qualifications from the job description.
+- **Cover Letter Tab:**
+  - Displays the AI-generated, personalized cover letter.
+  - Includes a button to download the cover letter as a Word document.
+- **Fit Evaluation Tab:**
+  - Shows the fit score, strengths, areas for improvement, and missing requirements based on the match between your resume and the job description.
+
+5. **How Each Module Works (Behind the Scenes)**
+------------------------------------------------
+- **ResumeAgent:**
+  - Analyzes the resume and job description in multiple steps (skills extraction, experience extraction, job analysis, bullet generation, fit scoring, refinement).
+- **CoverLetterAgent:**
+  - Generates a cover letter using the resume and job description, with multi-step optimization and refinement.
+- **Prompt Chaining & Reasoning:**
+  - Each step's output is used as input for the next, enabling multi-step reasoning and tailored results.
+- **Memory:**
+  - The system can be extended to remember previous interactions (currently session-based).
+
+6. **Recording or Demonstrating the Project**
+---------------------------------------------
+- Start the app and show the UI in your browser.
+- Paste a sample resume and job description.
+- Click "Generate Tailored Content" and narrate as the AI processes the input.
+- Walk through each tab, explaining what is shown and how it was generated.
+- Download the cover letter and open it to show the result.
+- (Optional) Show the debug output or logs if you want to demonstrate the AI's reasoning steps.
+
+7. **Shutting Down**
+-------------------
+- To stop the app, press `Ctrl+C` in the terminal where Streamlit is running.
+
+8. **Troubleshooting**
+---------------------
+- If you see errors, check your API key and internet connection.
+- If the UI is blank, check the terminal for debug output.
+- Make sure all dependencies are installed and up to date.
+
+---
+
+This guide ensures you can confidently demonstrate and record your AI Resume Tailoring Assistant project from start to finish. 
